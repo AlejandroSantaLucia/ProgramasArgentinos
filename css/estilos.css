@@ -1,0 +1,119 @@
+:root {
+    --negro: #040b07;
+    --principal: #d90404;
+    --variablePrincipal: #e02525;
+    --fondo: #e2e2e2;
+
+
+}
+
+
+
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+
+
+}
+
+html {
+    font-size: 16px;
+}
+
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--fondo);
+}
+
+header {
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logoHeader{
+    display: flex;
+    align-items: center;
+    /* max-width: 500px; */
+    height: 80px;
+    background: red;
+    
+}
+.logoHeader h1 {
+    font-size: 3rem;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    margin: 0 25px;
+}
+header ul li {
+    margin: 0 5px;
+    font-size: 2rem;
+    padding: 5px;
+    border-radius: 5%;
+}
+header ul li a{
+    text-decoration: none;
+    color: var(--negro);
+}
+
+header ul li:hover{
+    background-color:  rgba(00, 00, 00, .2);
+    font-size: 2.1rem;
+}
+
+
+
+main{
+    /* background: var(--principal) */
+}
+.tvContainer , .radioContainer {
+    display: none;
+    /* justify-content: center; */
+    overflow-x: auto;
+    overflow-y: hidden;
+    /* background: var(--fondo); */
+}
+
+.visible {
+    display: flex;
+}
+
+
+.titleContainer{
+    display: block;
+    box-shadow: 0px 0px 12px 1px  rgba(0, 0, 0, 1.2);
+     width: 100vw;
+     background: linear-gradient(to bottom, var(--variablePrincipal), var(--principal), var(--variablePrincipal));
+     /* margin:  10px; */
+     cursor: pointer;
+
+}
+.titleContainer:hover{
+    background: linear-gradient(to bottom,var(--principal), var(--variablePrincipal), var(--principal))
+
+}
+
+.category{
+    padding: 5px;
+}
+.category:hover{
+    font-size: 2.2rem;
+}
+
+.chanelContainer {
+    margin: 10px;
+}
+
+.tv iframe {
+    width: 480px;
+    height: 270px;
+
+}
